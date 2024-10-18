@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NewcloudApplication {
+public class NewCloudApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NewcloudApplication.class, args);
+		SpringApplication.run(NewCloudApplication.class, args);
 	}
 
 }
