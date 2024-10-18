@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: dev_ops
+    environment:
+      SPRING.DATASOURCE.URL: jdbc:postgresql://localhost:5432/devops_db}
+      SPRING.DATASOURCE.USERNAME: postgres
+      SPRING.DATASOURCE.PASSWORD: Password
+    depends_on:
+      - postgres
+    ports:
+      - "8088:8088"
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: my_postgres
+    environment:
+      POSTGRES_USER: viccyn
+      POSTGRES_PASSWORD: Password
+      POSTGRES_DB: devops_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+volumes:
+  postgres_data:
