@@ -36,7 +36,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build -t vi108/dev_ops:latest .
+        run: docker build -t vi108/newcloud:latest .
 
       - name: Push Docker image to Docker Hub
-        run: docker push vi108/dev_ops:latest
+        run: docker push vi108/newcloud:latest

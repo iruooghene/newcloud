@@ -5,4 +5,5 @@ import africa.semicolon.dto.response.RegisterResponse;
 
 public interface UserService {
     RegisterResponse register(RegisterRequest request);
+
 }

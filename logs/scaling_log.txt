@@ -1,0 +1,7 @@
+Current Memory Usage: 0B Mi
+./autoscale.sh: line 23: bc: command not found
+Memory usage is within the safe limit.
+Current Memory Usage: 0B Mi
+Memory usage is within the safe limit.
+Current Memory Usage: 0B Mi
+Memory usage is within the safe limit.

@@ -28,4 +28,5 @@ public class UserServiceImpl implements UserService{
         response.setMessage("Successfully registered");
         return response;
     }
+
 }
